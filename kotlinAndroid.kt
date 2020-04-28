@@ -45,3 +45,55 @@ return foodFish?.dec() ?:0
 
 
 //STRINGS
+println("value Added Tax")
+println("value" + "Added" + "Tax"+ "VAT")
+
+val numberOfFish = 20
+val numberOfPlants = 30
+println("I have " + numberOfFish + " and " + numberOfPlants " all together") //using + concatination
+println(" I have $numberOfFish and numberOfPlants all together") // using Dollar sign 
+
+val numberOfFish = 20
+val numberOfPlants = 30
+println(" I have ${numberOfPlants + numberOfFish} fish and plants together")
+// I have 50 fish and plants together
+
+
+//BOOLEAN AND OPERATORS
+val fish = "Fish"
+val plants = "Plants"
+fish == plants //Boolean False
+
+val computer = "Laptop"
+val desktop = "Dell"
+computer == desktop //res20: kotlin.Boolean = false
+
+val computer = "Laptop"
+val desktop = "Dell"
+computer == computer //res21: kotlin.Boolean = true
+
+val computer = "Laptop"
+val desktop = "Dell"
+computer != computer //res22: kotlin.Boolean = false  (Not equal operator)
+
+
+// IF ELSE STATEMENTS
+val numberOfFish = 20
+val numberOfPlants = 40
+if(numberOfFish>numberOfPlants)
+    println("Not Good Ratio")
+else
+    println("Aquarium needs repairs") // Aquarium need repairs
+
+// Ranges
+val fish = 80
+if(fish in 1..100)
+    println(fish) //80
+
+// When for switching 
+val numberOfFish = 65
+when(numberOfFish){
+    0 -> println("getting low")
+    50 -> println("better")
+    else println("prerfect")
+}
