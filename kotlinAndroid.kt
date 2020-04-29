@@ -97,3 +97,65 @@ when(numberOfFish){
     50 -> println("better")
     else println("prerfect")
 }
+
+
+// LISTS AND OPERATION
+// you cannot assign diffrent values but manipulate them on a list
+
+val myList = mutableListOf("Tuna","Omena","Tilapia")
+myList = mutableListOf("Shark") //error: val cannot be reassigned
+
+val myList = mutableListOf("Tuna","Omena","Tilapia")
+myList.remove("Tilapia") //res2: kotlin.Boolean = true
+
+//Arrays creation
+val arraySchool = arrayOf("Kabarak","Kenyatta","UoN")
+println(arraySchool)
+
+//typed arrays 
+val numbersArray = intArrayOf(1,3,5,6,8,9,55)
+
+//mixed arrays 
+import java.util.*
+
+val mixedArray = arrayOf("String",10)
+println(Arrays.toString(mixedArray)) //[String, 10]
+
+//Nesting Arrays 
+val fish = 15
+val plants = 12
+val swarm = listOf(fish,plants)
+val bigSwarm = arrayOf(swarm,arrayOf("Dolphine","whale"))
+println(Arrays.toString(bigSwarm)) //[[15, 12],"Dolphine","whale"]
+for (elements in swarm)println(elements) // 1512
+
+//indexing with elements 
+val fish = 15
+val plants = 12
+val swarm = listOf(fish,plants)
+val bigSwarm = arrayOf(swarm,arrayOf("Dolphine","whale"))
+for ((index,element) in swarm.withIndex())
+    println("Fish at $index  is $element") //Fish at 0  is 15Fish at 1  is 12
+
+//for in alphabets
+for (i in 'b'..'g')
+    println(i) //bcdefg
+
+//ranges for numbers
+for (i in 1..10)
+    println(i) //12345678910
+
+//range going down
+for (i in 5 downTo 1)
+    println(i) //54321
+
+//ranges in steps
+for (i in 2..8 step 2)
+    println(i) //2468
+
+
+//UPNEXT ON FUNCTIONS
+
+
+
+
