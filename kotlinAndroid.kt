@@ -157,5 +157,55 @@ for (i in 2..8 step 2)
 //UPNEXT ON FUNCTIONS
 
 
+// functions are group of related code statement that perform some specific tasks
+//are of two types : The STANDARD LIBRARY and USER DEFINE FUNCTIONS
+
+//create a funciton
+fun createME()
+{
+    //this a function with node code
+}
+
+//calling a function 
+fun callMe()
+{
+    //I have been called in the code below
+}
+
+callMe()
+
+//combine creation and calling a function
+fun callMe() {
+    println("Printing from callMe() function.")
+    println("This is cool (still printing from inside).")
+}
+
+fun main(args: Array<String>) {
+    callMe()
+    println("Printing outside from callMe() function.")
+}
+
+//ex2
+fun main(args: Array<String>) {
+
+    var number = 5.5
+    print("Result = ${Math.sqrt(number)}")
+}
+
+//ex 3 addition funciton
+fun addNumbers(n1: Double, n2: Double): Int {
+    val sum = n1 + n2
+    val sumInteger = sum.toInt()
+    return sumInteger
+}
+
+fun main(args: Array<String>) {
+    val number1 = 12.2
+    val number2 = 3.4
+    val result: Int
+
+    result = addNumbers(number1, number2)
+    println("result = $result")
+}
 
 
